@@ -14,16 +14,16 @@
     <fragment
         android:id="@+id/accountsFragment"
         android:name="com.example.tecbank.AccountsFragment"
-        android:label="Accounts"
+        android:label="My Accounts"
         tools:layout="@layout/fragment_accounts" />
     <fragment
         android:id="@+id/cardsFragment"
         android:name="com.example.tecbank.CardsFragment"
-        android:label="Cards"
+        android:label="My Cards"
         tools:layout="@layout/fragment_cards" />
     <fragment
         android:id="@+id/loansFragment"
         android:name="com.example.tecbank.LoansFragment"
-        android:label="Loans"
+        android:label="My Loans"
         tools:layout="@layout/fragment_loans" />
 </navigation>
