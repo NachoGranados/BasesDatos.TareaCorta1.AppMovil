@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment"
-    android:background="#3BBA83">
+    android:background="#5E738E">
 
     <ImageView
         android:id="@+id/imageView2"
