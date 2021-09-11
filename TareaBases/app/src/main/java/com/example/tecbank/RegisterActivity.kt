@@ -10,7 +10,7 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        val registerButtonAction = findViewById<Button>(R.id.registerButton)
+        val registerButtonAction = findViewById<Button>(R.id.buttonRegisterRegister)
         registerButtonAction.setOnClickListener {
 
             val Intent = Intent(this, LoginActivity::class.java)
