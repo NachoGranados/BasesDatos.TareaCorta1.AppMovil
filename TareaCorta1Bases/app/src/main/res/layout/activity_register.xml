@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="#2C3C5B">
+
+  <EditText
+      android:id="@+id/editTextRegisterName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="175dp"
+      android:layout_marginEnd="32dp"
+      android:backgroundTint="#5E738E"
+      android:ems="10"
+      android:hint="Name"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      android:textColorHint="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/editTextRegisterID"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="32dp"
+      android:backgroundTint="#5E738E"
+      android:ems="10"
+      android:hint="ID"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      android:textColorHint="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextRegisterName" />
+
+  <EditText
+      android:id="@+id/editTextRegisterPassword"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="32dp"
+      android:backgroundTint="#5E738E"
+      android:ems="10"
+      android:hint="Password"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      android:textColorHint="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextRegisterUsername" />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="413dp"
+      android:layout_height="230dp"
+      android:layout_marginTop="-30dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/logo2" />
+
+  <EditText
+      android:id="@+id/editTextRegisterClientType"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="32dp"
+      android:backgroundTint="#5E738E"
+      android:ems="10"
+      android:hint="Client Type"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      android:textColorHint="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextRegisterPassword" />
+
+  <EditText
+      android:id="@+id/editTextRegisterUsername"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="32dp"
+      android:backgroundTint="#5E738E"
+      android:ems="10"
+      android:hint="Username"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      android:textColorHint="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextRegisterID" />
+
+  <EditText
+      android:id="@+id/editTextRegisterMonthlyIncome"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="32dp"
+      android:backgroundTint="#5E738E"
+      android:ems="10"
+      android:hint="Monthly Income"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      android:textColorHint="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextRegisterClientType" />
+
+  <EditText
+      android:id="@+id/editTextRegisterAddress"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="32dp"
+      android:backgroundTint="#5E738E"
+      android:ems="10"
+      android:hint="Address"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      android:textColorHint="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextRegisterMonthlyIncome" />
+
+  <Button
+      android:id="@+id/buttonRegisterRegister"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="32dp"
+      android:background="@drawable/button_rounded"
+      android:text="Register"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextRegisterAddress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
