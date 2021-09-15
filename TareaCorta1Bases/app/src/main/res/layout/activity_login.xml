@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextLoginUsername" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/navegatorUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -83,7 +83,7 @@
         android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/navegatorUsername" />
 
     <Button
         android:id="@+id/buttonLoginLogin"

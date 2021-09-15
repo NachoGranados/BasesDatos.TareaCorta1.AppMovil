@@ -7,11 +7,14 @@
     tools:context=".AccountsFragment">
 
     <TableLayout
-        android:layout_width="360dp"
+        android:layout_width="362dp"
         android:layout_height="393dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
         android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -27,7 +30,7 @@
                 android:background="#5E738E"
                 android:gravity="center_horizontal"
                 android:padding="15sp"
-                android:text="Info"
+                android:text="Information"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
 

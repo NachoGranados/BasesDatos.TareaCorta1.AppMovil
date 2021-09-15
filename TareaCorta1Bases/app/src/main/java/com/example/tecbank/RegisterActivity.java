@@ -109,13 +109,13 @@ public class RegisterActivity extends AppCompatActivity {
 
                     if (response.isSuccessful()) {
 
-                        Toast.makeText(RegisterActivity.this, "POST Successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this, "Successful Register", Toast.LENGTH_SHORT).show();
 
                         openLoginActivity();
 
                     } else {
 
-                        Toast.makeText(RegisterActivity.this, "Request Failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this, "Register Failed", Toast.LENGTH_SHORT).show();
 
                     }
 

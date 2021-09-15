@@ -1,20 +1,16 @@
 package com.example.tecbank;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.example.tecbank.interfaces.UserRestAPI;
 import com.example.tecbank.models.User;
-
 import retrofit2.Call;
 import retrofit2.Callback;
-import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -39,24 +35,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //String username = usernameText.getText().toString();
-                //String password = passwordText.getText().toString();
-
-                //Toast.makeText(LoginActivity.this, "ID: " + id + "; Password: " + password, Toast.LENGTH_LONG).show();
-
-                //Model model = Model.getInstance(LoginActivity.this.getApplication());
-                //model.login(username, password);
-
                 getUser(usernameText.getText().toString());
 
-
-
-
-
-
-
-                //openMainActivity();
-                //findClientId(Integer.parseInt(idText.getText().toString()));
             }
         });
 
@@ -66,6 +46,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 openRegisterActivity();
+
             }
         });
 
@@ -89,9 +70,21 @@ public class LoginActivity extends AppCompatActivity {
 
                         User user = response.body();
 
-                        Toast.makeText(LoginActivity.this, user.getAddress(), Toast.LENGTH_SHORT).show();
+                        if (passwordText.getText().toString().equals(user.getPassword())) {
 
-                        //openMainActivity();
+                            Toast.makeText(LoginActivity.this, "Successful Login", Toast.LENGTH_SHORT).show();
+
+                            openMainActivity(user);
+
+                        } else {
+
+                            Toast.makeText(LoginActivity.this, "Wrong Username or Password. Try Again", Toast.LENGTH_SHORT).show();
+
+                        }
+
+                    } else {
+
+                        Toast.makeText(LoginActivity.this, "Wrong Username or Password. Try Again", Toast.LENGTH_SHORT).show();
 
                     }
 
@@ -113,9 +106,22 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    private void openMainActivity() {
+    private void openMainActivity(User user) {
 
         Intent intent = new Intent(this, MainActivity.class);
+
+        intent.putExtra("id", user.getId());
+        intent.putExtra("ssn", user.getSsn());
+        intent.putExtra("username", user.getUsername());
+        intent.putExtra("password", user.getPassword());
+        intent.putExtra("firstName", user.getFirstName());
+        intent.putExtra("lastName", user.getLastName());
+        intent.putExtra("address", user.getAddress());
+        intent.putExtra("phoneNumber", user.getPhoneNumber());
+        intent.putExtra("income", user.getIncome());
+        intent.putExtra("clientType", user.getClientType());
+        intent.putExtra("token", user.getToken());
+
         startActivity(intent);
 
     }
@@ -128,15 +134,3 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
